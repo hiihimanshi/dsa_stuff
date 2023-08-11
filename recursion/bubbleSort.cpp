@@ -3,6 +3,15 @@ using namespace std;
 
 // *recursion ------> when a function call itself directly or indirectly*
 
+void print(int *arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
 void sortArray(int *arr, int n)
 {
     // base case
@@ -28,10 +37,6 @@ int main()
     int arr[6] = {10, 1, 7, 6, 14, 9};
 
     sortArray(arr, 6);
-
-    for (int i = 0; i < 6; i++)
-    {
-        cout << arr[i] << " ";
-    }
+    print(arr, 6);
     return 0;
 }
